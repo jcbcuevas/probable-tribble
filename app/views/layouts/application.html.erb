@@ -8,7 +8,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container">
+   <nav class="navbar navbar-info">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WOW IT'S WORKING</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/users">Users</a></ii>
+      <li><a href="/staticpages/home">Home</a></li>
+      <li><a href="/staticpages/help">Help</a></li>
+      <li><a href="/staticpages/about">About</a></li>
+      <li><a href="/microposts">Microposts</a></li>
+    </ul>
+</nav>
+<div>
     <%= yield %>
+</div>
+    
   </body>
 </html>
